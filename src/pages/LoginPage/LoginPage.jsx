@@ -4,8 +4,6 @@ import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import userService from "../../utils/userService";
 import { useNavigate, Link } from "react-router-dom";
-//import Navigation from '../../components/Navigation/Navigation'
-//import PageHeader from '../..components/Header/Header'
 
 export default function LoginPage(props) {
   const [error, setError] = useState('')
@@ -41,7 +39,6 @@ export default function LoginPage(props) {
   return (
     <>
     <div>
-      
       <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as='h2' color='red' textAlign='center'>
