@@ -6,7 +6,6 @@ const upload = multer();
 /*---------- Public Routes ----------*/
 router.post("/signup", upload.single("photo"), usersCtrl.signup);
 router.post("/login", usersCtrl.login);
-//router.post("/:username", usersCtrl.favorites);
 
 /*---------- Protected Routes ----------*/
 

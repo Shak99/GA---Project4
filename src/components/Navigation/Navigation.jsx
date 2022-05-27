@@ -1,37 +1,74 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Header, Segment, Image, Icon, Form, Button } from "semantic-ui-react";
-import {Navbar, Nav, NavDropdown, FormControl, Container} from 'react-bootstrap'
+import { Header, Segment, Image, Icon } from "semantic-ui-react";
 
-export default function Navigation({ user, handleLogout }) {
+export default function PageHeader({ user, handleLogout }) {
     console.log(user, 'user in header')
   return (
-      <Segment clearing>
-        <Header as="h2" floated="right">
-          <Link to="/">
-            <Icon name="home"></Icon>
-          </Link>
-          <Link to="/marvel">
-            Marvel
-          </Link>
-          <Link to="/dc">
-            DC
-          </Link>
-          <Link to="/:userid">
-            Favorites
-          </Link>
-          <Link to="" onClick={handleLogout}>
-            Logout
-          </Link>
-        </Header>
-        <Header as="h2" floated="left">
-          <Link to={`/${user?.username}`}>
-            {user?.username}
-          </Link>
-        </Header>
-      </Segment>
+    <Segment clearing>
+      <Header as="h2" floated="right">
+        <Link to="/">
+          <Icon name="home"></Icon>
+        </Link>
+        <Link to="" onClick={handleLogout}>
+          Logout
+        </Link>
+      </Header>
+      <Header as="h2" floated="left">
+        <Link to={`/${user?.username}`}>
+          <Image
+            src={
+              user?.photoUrl
+                ? user?.photoUrl
+                : "https://react.semantic-ui.com/images/wireframe/square-image.png"
+            }
+            avatar
+          ></Image>
+        </Link>
+      </Header>
+    </Segment>
   );
 }
+
+
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import { Header, Segment, Image, Icon, Form, Button } from "semantic-ui-react";
+// import {Navbar, Nav, NavDropdown, FormControl, Container} from 'react-bootstrap'
+
+// export default function Navigation({ user, handleLogout }) {
+//     console.log(user, 'user in header')
+//   return (
+//       <Segment clearing>
+//         <Header as="h2" floated="right">
+//           <Link to="/">
+//             <Icon name="home"></Icon>
+//           </Link>
+//           <Link to="/marvel">
+//             Marvel
+//           </Link>
+//           <Link to="/dc">
+//             DC
+//           </Link>
+//           <Link to="/:userid">
+//             Favorites
+//           </Link>
+//           <Link to="" onClick={handleLogout}>
+//             Logout
+//           </Link>
+//         </Header>
+//         <Header as="h2" floated="left">
+//           <Link to={`/${user?.username}`}>
+//             {user?.username}
+//           </Link>
+//         </Header>
+//       </Segment>
+//   );
+// }
 
 
 

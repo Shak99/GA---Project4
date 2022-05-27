@@ -24,7 +24,7 @@ export default function SignUpPage(props) {
 
       await userService.signup(state)
       props.handleSignUpOrLogin();
-      navigate('/home')
+      navigate('/')
 
     } catch(err){
       console.log(err.message);

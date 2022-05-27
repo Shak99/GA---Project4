@@ -4,8 +4,9 @@ import "./App.css";
 import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
-import Navigation from '../../components/Navigation/Navigation'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from '../../components/Header/Header'
+import FeedPage from '../FeedPage/FeedPage'; 
+import ProfilePage from '../ProfilePage/ProfilePage'
 
 
 function App() {
@@ -25,7 +26,10 @@ function App() {
   if (user) {
     return (
       <Routes>
-        <Route path="/" element={<h1>This is Home Page!</h1>} />
+        <Route
+        path="/"
+        element={<FeedPage user={user} handleLogout={handleLogout} />}
+        />
         <Route
           path="/login"
           element={<LoginPage handleSignUpOrLogin={handleSignUpOrLogin} />}
@@ -34,13 +38,12 @@ function App() {
           path="/signup"
           element={<SignupPage handleSignUpOrLogin={handleSignUpOrLogin} />}
         />
+        <Route path="/:username" element={<ProfilePage user={user} handleLogout={handleLogout}  />} />
       </Routes>
     );
   }
 
   return (
-    <div>
-    <Navigation />
     <Routes>
       <Route
         path="/login"
@@ -52,7 +55,6 @@ function App() {
       />
       <Route path="/*" element={<Navigate to="/login" />} />
     </Routes>
-    </div>
   );
 }
 
