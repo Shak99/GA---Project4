@@ -1,3 +1,5 @@
+# MyBasic Docs
+
 #### myBasic Docs is MERN stack app where you can upload and keep up with any all and files/documents that you want to keep up with. Especially for the ones that are constantly needed at any given time.
 
 Trello Board: https://trello.com/b/VtXtkgRI/final-ga-project
@@ -11,6 +13,9 @@ Wireframe and ERD
 <img width="502" alt="Screen Shot 2022-05-30 at 8 44 06 AM" src="https://user-images.githubusercontent.com/47376680/171029057-d4ada89d-4741-40e2-b8d2-cab959a114be.png">
 
 Initially I planned on making a Sneaker site using a sneakers api where the users can look up and keep track of all the shoes past, current, and future. I changed plans because I didn't have time to figure out how to work a downloaded api.
+
+<img width="493" alt="Screen Shot 2022-05-23 at 10 49 46 AM" src="https://user-images.githubusercontent.com/47376680/171031272-337a6b37-8eab-4f7e-acdd-cb95af03fdd1.png">
+
 <img width="1280" alt="Screen Shot 2022-05-29 at 8 12 46 PM" src="https://user-images.githubusercontent.com/47376680/171029968-afcbd988-b6c1-4667-991b-972767bc6759.png">
 
 <img width="1280" alt="Screen Shot 2022-05-29 at 8 12 57 PM" src="https://user-images.githubusercontent.com/47376680/171029985-5ec7ed77-d9bf-4112-bd27-67b894af782d.png">
@@ -26,6 +31,12 @@ My next plans were to have the same set up as I did for the sneakers but replace
 
 <img width="789" alt="Screen Shot 2022-05-30 at 9 18 13 AM" src="https://user-images.githubusercontent.com/47376680/171030952-eae60adf-444a-408a-8266-5899fd024455.png">
 
+#### Screen shots of  myBasic Docs
+
+
+#### Heroku: https://ga-project4.herokuapp.com/ 
+
+Icebox: Have the user be able to download their files and work on CSS design
 
 
 ## Technologies used
