@@ -33,6 +33,11 @@ My next plans were to have the same set up as I did for the sneakers but replace
 
 #### Screen shots of  myBasic Docs
 
+<img width="1046" alt="Screen Shot 2022-05-30 at 9 33 31 AM" src="https://user-images.githubusercontent.com/47376680/171032763-9d0751b8-4711-4adf-a2a6-5d03b01f652e.png">
+
+<img width="1047" alt="Screen Shot 2022-05-30 at 9 33 41 AM" src="https://user-images.githubusercontent.com/47376680/171032773-2df1a889-c1c0-4217-96be-74d0f9949544.png">
+
+<img width="1057" alt="Screen Shot 2022-05-30 at 9 34 26 AM" src="https://user-images.githubusercontent.com/47376680/171032779-2a62c23e-be64-4b13-876a-b3ee3ba41c34.png">
 
 #### Heroku: https://ga-project4.herokuapp.com/ 
 
