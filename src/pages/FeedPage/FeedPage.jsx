@@ -5,8 +5,8 @@ import AddDocForm from "../../components/AddDocForm/AddDocForm";
 import DocGallery from "../../components/DocGallery/DocGallery";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import Loading from "../../components/Loader/Loader";
-import * as docsAPI from "../../utils/docsApi";
-import * as starsAPI from '../../utils/starApi';
+import * as docAPI from "../../utils/docApi";
+import * as starAPI from '../../utils/starApi';
 
 
 
@@ -16,7 +16,7 @@ import { Grid } from "semantic-ui-react";
 
 
 export default function Feed({user, handleLogout}) {
-  console.log(docsAPI, " <-- docsAPI")
+  console.log(docAPI, " <-- docAPI")
   const [docs, setDocs] = useState([]); // <- likes are inside of the each post in the posts array
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -24,7 +24,7 @@ export default function Feed({user, handleLogout}) {
 
   async function addStar(docId){
     try {
-      const data = await starsAPI.create(docId)
+      const data = await starAPI.create(docId)
       console.log(data, ' <- the response from the server when we make a like');
       getDocs(); // <- to go get the updated posts with the like
     } catch(err){
@@ -35,7 +35,7 @@ export default function Feed({user, handleLogout}) {
 
   async function removeStar(starId){
     try {
-      const data = await starsAPI.removeStar(starId);
+      const data = await starAPI.removeStar(starId);
       console.log(data, '<-  this is the response from the server when we remove a like')
       getDocs()
       
@@ -53,7 +53,7 @@ export default function Feed({user, handleLogout}) {
   async function handleAddDoc(doc) {
     try {
       setLoading(true);
-      const data = await docsAPI.create(doc); // our server is going to return
+      const data = await docAPI.create(doc); // our server is going to return
       // the created post, that will be inside of data, which is the response from
       // the server, we then want to set it in state
       console.log(data, " this is response from the server, in handleAddPost");
@@ -68,7 +68,7 @@ export default function Feed({user, handleLogout}) {
   // R read in crud
   async function getDocs() {
     try {
-      const data = await docsAPI.getAll();
+      const data = await docAPI.getAll(user._id); //may have to take user out
       console.log(data, " this is data,");
       setDocs([...data.docs]);
       setLoading(false);
@@ -114,7 +114,7 @@ export default function Feed({user, handleLogout}) {
       </Grid.Row>
       <Grid.Row>
         <Grid.Column style={{ maxWidth: 450 }}>
-          <AddDocForm handleAddPost={handleAddDoc} />
+          <AddDocForm handleAddDoc={handleAddDoc} />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>

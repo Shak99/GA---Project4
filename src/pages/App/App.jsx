@@ -4,9 +4,9 @@ import "./App.css";
 import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
-import Header from '../../components/Header/Header'
 import FeedPage from '../FeedPage/FeedPage'; 
 import ProfilePage from '../ProfilePage/ProfilePage'
+import AddDocForm from '../../components/AddDocForm/AddDocForm'
 
 
 function App() {
@@ -31,6 +31,10 @@ function App() {
         element={<FeedPage user={user} handleLogout={handleLogout} />}
         />
         <Route
+          path='/'
+          element={<AddDocForm user={user} handleLogout={handleLogout} />}
+          />
+        <Route        
           path="/login"
           element={<LoginPage handleSignUpOrLogin={handleSignUpOrLogin} />}
         />

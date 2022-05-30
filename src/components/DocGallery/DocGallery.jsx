@@ -16,6 +16,7 @@ export default function DocFeed({docs, numDocsCol, isProfile, loading, addStar, 
           </Segment>
         ) : null}
         {docs.map((doc) => {
+            console.log(doc, '---Doc')
           return (
             <DocCard
               doc={doc}
