@@ -6,7 +6,7 @@ Trello Board: https://trello.com/b/VtXtkgRI/final-ga-project
 
 <img width="1279" alt="Screen Shot 2022-05-30 at 9 04 48 AM" src="https://user-images.githubusercontent.com/47376680/171028931-84df43d8-cb8f-42f3-b029-7301ee2e762b.png">
 
-Wireframe and ERD
+#### Wireframe and ERD
 
 <img width="802" alt="Screen Shot 2022-05-30 at 8 43 40 AM" src="https://user-images.githubusercontent.com/47376680/171029001-2b88cb5f-db4b-466b-97e3-92c94b47509b.png">
 
@@ -36,7 +36,7 @@ My next plans were to have the same set up as I did for the sneakers but replace
 
 #### Heroku: https://ga-project4.herokuapp.com/ 
 
-Icebox: Have the user be able to download their files and work on CSS design
+#### Icebox: Have the user be able to download their files and work on CSS design
 
 
 ## Technologies used
