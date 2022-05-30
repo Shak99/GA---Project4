@@ -1,38 +1,47 @@
-## Setup 
+#### myBasic Docs is MERN stack app where you can upload and keep up with any all and files/documents that you want to keep up with. Especially for the ones that are constantly needed at any given time.
 
-1. Clone the repo
-2. Rename the folder to your Project, you can use the `mv` command like `mv mern-boilerplate yourprojectname`
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+Trello Board: https://trello.com/b/VtXtkgRI/final-ga-project
+
+<img width="1279" alt="Screen Shot 2022-05-30 at 9 04 48 AM" src="https://user-images.githubusercontent.com/47376680/171028931-84df43d8-cb8f-42f3-b029-7301ee2e762b.png">
+
+Wireframe and ERD
+
+<img width="802" alt="Screen Shot 2022-05-30 at 8 43 40 AM" src="https://user-images.githubusercontent.com/47376680/171029001-2b88cb5f-db4b-466b-97e3-92c94b47509b.png">
+
+<img width="502" alt="Screen Shot 2022-05-30 at 8 44 06 AM" src="https://user-images.githubusercontent.com/47376680/171029057-d4ada89d-4741-40e2-b8d2-cab959a114be.png">
+
+Initially I planned on making a Sneaker site using a sneakers api where the users can look up and keep track of all the shoes past, current, and future. I changed plans because I didn't have time to figure out how to work a downloaded api.
+<img width="1280" alt="Screen Shot 2022-05-29 at 8 12 46 PM" src="https://user-images.githubusercontent.com/47376680/171029968-afcbd988-b6c1-4667-991b-972767bc6759.png">
+
+<img width="1280" alt="Screen Shot 2022-05-29 at 8 12 57 PM" src="https://user-images.githubusercontent.com/47376680/171029985-5ec7ed77-d9bf-4112-bd27-67b894af782d.png">
+
+<img width="883" alt="Screen Shot 2022-05-21 at 9 08 14 PM" src="https://user-images.githubusercontent.com/47376680/171030509-31642957-07b3-4a14-bff9-4e26e5693da1.png">
+
+<img width="883" alt="Screen Shot 2022-05-21 at 9 08 54 PM" src="https://user-images.githubusercontent.com/47376680/171030527-5acd1ba9-086f-4979-83f3-8f5d9a598a48.png">
 
 
-#### Setup your git repo
+My next plans were to have the same set up as I did for the sneakers but replace it with super heroes and villians. I wanted the users to be able to search characters, add them to a personal list and make comments about them. The api I found worked but I realized the way to wanted to search information wasn't an option for how they implemented it and I didn't have time to find a way around it so that's when I tried to simplify my project a little more to myBasic Docs
 
-1. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-2. Then you can run the following commands in the root of your project 
+<img width="784" alt="Screen Shot 2022-05-30 at 9 17 57 AM" src="https://user-images.githubusercontent.com/47376680/171030890-fce26648-40aa-47f0-b2fc-ed2e3b70a17e.png">
 
-```
-git init
-git add .
-git commit -m "first commit"
-git remote add origin git@git.generalassemb.ly:SEI-CC/test.git // this will be whatever your address will be, look at the address in the code github gives you!
-git push -u origin main
-```
+<img width="789" alt="Screen Shot 2022-05-30 at 9 18 13 AM" src="https://user-images.githubusercontent.com/47376680/171030952-eae60adf-444a-408a-8266-5899fd024455.png">
 
-#### Setup the App
 
-```npm install```
 
-*DOTENV*
+## Technologies used
 
-`touch .env`
+-React
 
-add your variables
+-MongoDB
 
-```
-DATABASE_URL=mongodb://localhost:27017/testagramV2
-BUCKET_NAME=catcollectorone
-SECRET=mysecretforjwt
-```
+-Express
 
-The app is configured, to use those respective key names for the database, jwt secret and aws bucket, of course you'll have your own values
-# GA---Project4
+-Node.js
+
+-JavaScript
+
+-HTML
+
+-CSS
+
+-Heroku
